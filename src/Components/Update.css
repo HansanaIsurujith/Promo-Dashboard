@@ -1,0 +1,100 @@
+.form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titles {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 530px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .titles:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .input-field {
+    padding: 14px;
+    font-size: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #6c63ff;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+  }
+  
+  .input-field::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-button {
+    padding: 12px 20px;
+    background-color: #6c63ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(108, 99, 255, 0.2);
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  
+  .form-button:hover {
+    background-color: #5a54d6;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(108, 99, 255, 0.3);
+  }
+  
+  .form-button:active {
+    background-color: #4c45b3;
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.2);
+  }
+  
+  .form-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.4);
+  }
+  
+  @media (max-width: 600px) {
+    .titles {
+        padding: 15px;
+    }
+  
+    .input-field {
+        padding: 12px;
+        font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .form-container {
+      padding: 15px;
+    }
+  }
+  
