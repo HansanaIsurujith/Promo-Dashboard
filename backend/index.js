@@ -14,10 +14,6 @@ const db = mysql.createConnection({
 app.use(express.json())
 app.use(cors())
 
-app.get("/", (req,res)=>{
-    res.json("Helloooooooo")
-})
-
 app.get("/promotions", (req,res)=>{
     res.set('Cache-Control', 'no-store');
     const q = "SELECT * FROM promotions";

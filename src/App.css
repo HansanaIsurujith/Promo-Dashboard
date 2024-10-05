@@ -2,16 +2,26 @@
     display: flex;
   }
   
-  body {
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-  }
+}
+
+.dashboard-container.light {
+    background-color: white;
+    color: black;
+}
+
+.dashboard-container.dark {
+    background-color: black;
+    color: white;
+}
   
-  table {
+table {
     width: 100%;
-  }
+}
   
-  button {
+button {
     cursor: pointer;
-  }
+}
   
