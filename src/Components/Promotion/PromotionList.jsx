@@ -1,12 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { ThemeContext } from '../ThemeContext'; // Adjust the import based on your file structure
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import Papa from 'papaparse'; // Import PapaParse
 import '../Promotion/PromotionList.css';
 
 const PromotionList = () => {
-  const theme = useContext(ThemeContext);
   const [promotions, setPromotions] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -14,6 +12,7 @@ const PromotionList = () => {
     const fetchAllPromotions = async () => {
       try {
         const res = await axios.get("http://localhost:8800/promotions");
+        console.log("Fetched Promotions:", res.data);
         setPromotions(res.data);
       } catch (err) {
         console.log(err);
@@ -57,7 +56,7 @@ const PromotionList = () => {
   };
 
   return (
-    <div className={`dashboard-container ${theme}`}>
+    <div className={"dashboard-container"}>
       <aside className="sidebar">
       <div className="logo">
              <h2>PromoDashboard</h2>
