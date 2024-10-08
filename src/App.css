@@ -1,4 +1,53 @@
-.app-container {
+/* App.css */
+.app-container.light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .app-container.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .theme-toggle-btn {
+    padding: 10px;
+    margin: 20px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .theme-toggle-btn:hover {
+    background-color: #005f5f;
+  }
+  
+  /* Additional global styles for both themes */
+  input, button, table, th, td {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .app-container.light input, 
+  .app-container.light button, 
+  .app-container.light table, 
+  .app-container.light th, 
+  .app-container.light td {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .app-container.dark input, 
+  .app-container.dark button, 
+  .app-container.dark table, 
+  .app-container.dark th, 
+  .app-container.dark td {
+    background-color: #2c2c2c;
+    color: #fff;
+  }
+  
+
+
+/* .app-container {
     display: flex;
   }
   
@@ -24,4 +73,4 @@ table {
 button {
     cursor: pointer;
 }
-  
+   */

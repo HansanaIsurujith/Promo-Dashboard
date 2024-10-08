@@ -124,7 +124,7 @@ const PromotionList = () => {
                     </button>
                     <button className="delete-btn" onClick={() => handleDelete(promotion.id)}>Delete</button>
                     <button className="view-btn">
-                      <Link to={`/view/${promotion.id}`}>View</Link>
+                      <Link to= "/" className="view-btn">View</Link>
                     </button>
                   </td>
                 </tr>

@@ -1,0 +1,91 @@
+/* ClientPromotions.css */
+.client-promotions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .promotions-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .promotion-card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .promotion-card h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-bottom: 15px;
+  }
+  
+  .promotion-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .promotion-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .promotion-card:hover h2 {
+    color: #004080;
+  }
+  
+  .login-btn-container {
+    margin-top: 30px;
+  }
+  
+  .admin-login-btn {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .admin-login-btn:hover {
+    background-color: #003d80;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .promotion-card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    .admin-login-btn {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  }
+  
