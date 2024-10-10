@@ -20,7 +20,7 @@ const ClientPromotions = () => {
 
   return (
     <div className="client-promotions-container">
-      <h1>Current Promotions</h1>
+      <div className="Title"><h1>Current Promotions</h1></div>
       <div className="promotions-list">
         {promotions.map((promotion) => (
           <div className="promotion-card" key={promotion.id}>

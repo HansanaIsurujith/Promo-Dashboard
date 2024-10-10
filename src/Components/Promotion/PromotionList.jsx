@@ -63,12 +63,7 @@ const PromotionList = () => {
            </div>
            <nav className="nav">
              <ul>
-               <li><Link to="/promotions" className="active">Promotions</Link></li>
-               <li><Link to="/target-groups">Target Groups</Link></li>
-               <li><Link to="/partners">Partners</Link></li>
-               <li><Link to="/channels">Channels</Link></li>
-               <li><Link to="/messages">Messages</Link></li>
-               <li><Link to="/settings">Settings</Link></li>
+               <li><Link to="/admin" className="active">Promotions</Link></li>
              </ul>
            </nav>
 

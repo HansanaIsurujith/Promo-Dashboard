@@ -1,5 +1,39 @@
+/* Default (light theme) */
+body.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark theme */
+body.dark {
+  --background-color: #2b2b2b;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn {
+  padding: 10px 20px;
+  background-color: var(--text-color);
+  color: var(--background-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  opacity: 0.8;
+}
+
+
+
 /* App.css */
-.app-container.light {
+/* .app-container.light {
     background-color: #ffffff;
     color: #000000;
   }
@@ -23,7 +57,7 @@
   }
   
   /* Additional global styles for both themes */
-  input, button, table, th, td {
+  /* input, button, table, th, td {
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
@@ -43,7 +77,7 @@
   .app-container.dark td {
     background-color: #2c2c2c;
     color: #fff;
-  }
+  } */
   
 
 
